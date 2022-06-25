@@ -2,7 +2,7 @@
 pipeline {
     
     environment {
-    imagename = "becomedevops/petclinics"
+    imagename = "ramamdocker/petclinics"
     registryCredential = 'Dockerhubid'
     dockerImage = ''
   }
@@ -15,7 +15,7 @@ pipeline {
         stage('git') {
             steps {
                 echo 'clonning Repository'
-                git branch: 'main', url: 'https://github.com/mnagen/spring-petclinic.git'
+                git branch: 'main', url: 'https://github.com/GIThubramam/spring-petclinic.git'
                 
                 echo 'Repo clone successfully'
             }
